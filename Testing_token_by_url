@@ -1,0 +1,23 @@
+<?php 
+
+	 $salt = 'a366a3716a87cdaade0d1435fcdbb91a';
+    
+     $token_sys = md5('bh01'.date("j").$salt);
+
+     echo $token_sys;
+
+     //$ref=@$_SERVER[HTTP_REFERER];
+
+	 //echo "Referrer of this page  = $ref ";
+	 //session_start();
+	 //$_SESSION["Referal_url"] = $ref ;
+
+	 /*if(isset($_SESSION["Referal_url"]) && !empty($_SESSION["Referal_url"])){
+	    echo  $ref ;
+	    session_destroy();
+	} */
+	//print_r($_SESSION);
+
+
+
+?>
